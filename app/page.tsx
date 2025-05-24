@@ -37,7 +37,7 @@ export default function HomePage() {
           </Link>
 
           {/* Reading card */}
-          <Link href="/" className="group">
+          <Link href="/read" className="group">
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full transform group-hover:-translate-y-1">
               <div className="p-8 flex flex-col items-center">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-darkblue to-darkblue-light flex items-center justify-center mb-6">
