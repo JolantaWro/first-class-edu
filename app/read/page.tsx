@@ -20,7 +20,7 @@ const wordExercises: WordExercise[] = [
     word: "kot",
     options: ["kot", "pies", "ryba", "ptak"],
     correctIndex: 0,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "/read/kot.jpg",
   },
   {
     word: "dom",
