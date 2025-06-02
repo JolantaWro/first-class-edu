@@ -19,7 +19,7 @@ export default function HomePage() {
       <div className="container mx-auto px-6 -mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Math card */}
-          <Link href="/" className="group">
+          <Link href="/math" className="group">
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full transform group-hover:-translate-y-1">
               <div className="p-8 flex flex-col items-center">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-yellow-dark to-yellow flex items-center justify-center mb-6">
@@ -36,7 +36,6 @@ export default function HomePage() {
             </div>
           </Link>
 
-          {/* Reading card */}
           <Link href="/read" className="group">
             <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full transform group-hover:-translate-y-1">
               <div className="p-8 flex flex-col items-center">
