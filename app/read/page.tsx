@@ -26,7 +26,7 @@ const wordExercises: WordExercise[] = [
     word: "dom",
     options: ["szkoła", "dom", "sklep", "park"],
     correctIndex: 1,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "/read/home.jpg",
   },
   {
     word: "słońce",
@@ -138,7 +138,7 @@ export default function ReadingPage() {
                 className="w-32 h-32 object-contain"
               />
 
-              <div className="text-3xl font-bold">{currentExercise.word}</div>
+              {/* <div className="text-3xl font-bold">{currentExercise.word}</div> */}
 
               {isCorrect === null ? (
                 <div className="grid grid-cols-2 gap-3 w-full">
