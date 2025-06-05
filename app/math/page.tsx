@@ -26,7 +26,8 @@ export default function MathPage() {
   const [showOptions, setShowOptions] = useState(true)
 
   const generateProblem = () => {
-    const operations = ["+", "-", "×"]
+    // const operations = ["+", "-", "×"]
+    const operations = ["+", "-"]
     const operation = operations[Math.floor(Math.random() * operations.length)]
 
     let num1, num2, answer
