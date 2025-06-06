@@ -32,13 +32,13 @@ const wordExercises: WordExercise[] = [
     word: "słońce",
     options: ["księżyc", "gwiazda", "słońce", "chmura"],
     correctIndex: 2,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "/read/sun.jpg",
   },
   {
     word: "jabłko",
     options: ["jabłko", "gruszka", "banan", "truskawka"],
     correctIndex: 0,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "/read/apple.jpg",
   },
   {
     word: "piłka",
@@ -135,7 +135,7 @@ export default function ReadingPage() {
               <img
                 src={currentExercise.image || "/placeholder.svg"}
                 alt={currentExercise.word}
-                className="w-32 h-32 object-contain"
+                className=" object-contain"
               />
 
               {/* <div className="text-3xl font-bold">{currentExercise.word}</div> */}
