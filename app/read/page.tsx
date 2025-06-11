@@ -44,7 +44,7 @@ const wordExercises: WordExercise[] = [
     word: "piłka",
     options: ["zabawka", "książka", "piłka", "lalka"],
     correctIndex: 2,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749675890/pexels-oandremoura-2471259_cmw63g.jpg",
   },
   {
     word: "kwiat",
