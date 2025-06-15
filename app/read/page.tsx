@@ -50,7 +50,7 @@ const wordExercises: WordExercise[] = [
     word: "kwiat",
     options: ["drzewo", "kwiat", "trawa", "krzew"],
     correctIndex: 1,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749933850/flower_imayfk.jpg",
   },
   {
     word: "auto",
