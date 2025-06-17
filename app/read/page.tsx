@@ -56,7 +56,7 @@ const wordExercises: WordExercise[] = [
     word: "auto",
     options: ["auto", "rower", "samolot", "pociąg"],
     correctIndex: 0,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1750075914/pexels-alexgtacar-745150-1592384_aubtof.jpg",
   },
   {
     word: "mama",
