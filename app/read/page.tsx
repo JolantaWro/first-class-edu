@@ -62,7 +62,7 @@ const wordExercises: WordExercise[] = [
     word: "mama",
     options: ["tata", "brat", "siostra", "mama"],
     correctIndex: 3,
-    image: "/placeholder.svg?height=150&width=150",
+    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1750075914/pexels-alexgtacar-745150-1592384_aubtof.jpg",
   },
 ]
 
