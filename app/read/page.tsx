@@ -48,13 +48,13 @@ const wordExercises: WordExercise[] = [
   },
   {
     word: "kwiaty",
-    options: ["drzewo", "kwiat", "trawa", "krzew"],
+    options: ["drzewo", "kwiaty", "trawa", "krzew"],
     correctIndex: 1,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749933850/flower_imayfk.jpg",
   },
   {
-    word: "auto",
-    options: ["auto", "rower", "samolot", "pociąg"],
+    word: "samochód",
+    options: ["samochód", "rower", "samolot", "pociąg"],
     correctIndex: 0,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1750075914/pexels-alexgtacar-745150-1592384_aubtof.jpg",
   },
