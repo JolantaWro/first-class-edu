@@ -55,7 +55,7 @@ export default function HomePage() {
                 <h2 className="text-3xl font-bold text-orange-800 mb-3 drop-shadow-sm">🔢 Matematyka</h2>
 
                 <p className="text-orange-700 text-center mb-6 font-medium text-lg">
-                  Odkryj świat liczb! Dodawanie, odejmowanie i mnożenie nigdy nie było tak zabawne! 🎲✨
+                  Odkryj świat liczb! Dodawanie, odejmowanie i mnożenie 🎲✨
                 </p>
 
                 <Button className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 border-none text-white rounded-full px-10 py-7 h-auto font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
