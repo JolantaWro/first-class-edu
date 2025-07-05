@@ -18,31 +18,31 @@ type WordExercise = {
 const wordExercises: WordExercise[] = [
   {
     word: "kot",
-    options: ["kot", "pies", "ryba", "ptak"],
+    options: ["kot", "pies", "kogut", "ptak"],
     correctIndex: 0,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/kot_rxflxu.jpg",
   },
   {
     word: "dom",
-    options: ["szkoła", "dom", "sklep", "park"],
+    options: ["drewno", "dom", "sklep", "park"],
     correctIndex: 1,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/home_egan7x.jpg",
   },
   {
     word: "słońce",
-    options: ["księżyc", "gwiazda", "słońce", "chmura"],
+    options: ["słoń", "deszcz", "słońce", "chmura"],
     correctIndex: 2,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/sun_furv0v.jpg",
   },
   {
     word: "jabłko",
-    options: ["jabłko", "gruszka", "banan", "truskawka"],
+    options: ["jabłko", "gruszka", "banan", "jagody"],
     correctIndex: 0,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg",
   },
   {
     word: "piłka",
-    options: ["zabawka", "książka", "piłka", "lalka"],
+    options: ["pajacyk", "książka", "piłka", "lalka"],
     correctIndex: 2,
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749675890/pexels-oandremoura-2471259_cmw63g.jpg",
   },
@@ -60,7 +60,7 @@ const wordExercises: WordExercise[] = [
   },
   {
     word: "mama",
-    options: ["tata", "brat", "siostra", "mama"],
+    options: ["makaron", "brat", "siostra", "mama"],
     correctIndex: 3,
     image:
       "https://res.cloudinary.com/dadi3oed4/image/upload/v1750624028/pexels-polina-tankilevitch-3875205_rmutr1.jpg",
