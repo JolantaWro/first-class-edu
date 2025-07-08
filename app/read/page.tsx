@@ -70,7 +70,7 @@ const wordExercises: WordExercise[] = [
     options: ["pomidor", "truskawki", "gruszka", "trampki"],
     correctIndex: 1,
     image:
-      "https://res.cloudinary.com/dadi3oed4/image/upload/v1750624028/pexels-polina-tankilevitch-3875205_rmutr1.jpg",
+      "https://res.cloudinary.com/dadi3oed4/image/upload/v1751975557/strawberries_hz2xvp.jpg",
   },
 ]
 
