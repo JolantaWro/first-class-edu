@@ -19,7 +19,7 @@ export default function HomePage() {
       <div className="relative overflow-hidden bg-gradient-to-r from-pink-300 via-purple-300 via-blue-300 to-green-300 pt-16 pb-24">
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="inline-block mb-6">
-            <h1 className="text-6xl font-bold tracking-tight bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-4 drop-shadow-lg">
+            <h1 className="text-6xl font-bold tracking-tight mb-4 drop-shadow-lg text-purple-800">
               🎮 Gra Edukacyjna 🌟
             </h1>
           </div>
