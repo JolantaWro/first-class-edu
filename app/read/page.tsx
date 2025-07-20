@@ -1,125 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Home, Check, X, Star, Heart, BookOpen } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { Home, Star, Heart, BookOpen, Baby, GraduationCap, Sparkles, Palette } from "lucide-react"
 
-type WordExercise = {
-  word: string
-  options: string[]
-  correctIndex: number
-  image: string
-}
-
-const wordExercises: WordExercise[] = [
-  {
-    word: "kot",
-    options: ["kot", "pies", "kogut", "ptak"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/kot_rxflxu.jpg",
-  },
-  {
-    word: "dom",
-    options: ["drewno", "dom", "sklep", "park"],
-    correctIndex: 1,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/home_egan7x.jpg",
-  },
-  {
-    word: "słońce",
-    options: ["słoń", "deszcz", "słońce", "chmura"],
-    correctIndex: 2,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/sun_furv0v.jpg",
-  },
-  {
-    word: "jabłko",
-    options: ["jabłko", "gruszka", "banan", "jagody"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg",
-  },
-  {
-    word: "piłka",
-    options: ["pajacyk", "książka", "piłka", "lalka"],
-    correctIndex: 2,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749675890/pexels-oandremoura-2471259_cmw63g.jpg",
-  },
-  {
-    word: "kwiaty",
-    options: ["drzewo", "kwiaty", "trawa", "krzew"],
-    correctIndex: 1,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749933850/flower_imayfk.jpg",
-  },
-  {
-    word: "samochód",
-    options: ["samochód", "rower", "samolot", "pociąg"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1750075914/pexels-alexgtacar-745150-1592384_aubtof.jpg",
-  },
-  {
-    word: "mama",
-    options: ["makaron", "brat", "siostra", "mama"],
-    correctIndex: 3,
-    image:
-      "https://res.cloudinary.com/dadi3oed4/image/upload/v1750624028/pexels-polina-tankilevitch-3875205_rmutr1.jpg",
-  },
-  {
-    word: "truskawki",
-    options: ["pomidor", "truskawki", "gruszka", "trampki"],
-    correctIndex: 1,
-    image:
-      "https://res.cloudinary.com/dadi3oed4/image/upload/v1751975557/strawberries_hz2xvp.jpg",
-  },
-]
-
-export default function ReadingPage() {
-  const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0)
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null)
-  const [score, setScore] = useState(0)
-  const [exerciseCount, setExerciseCount] = useState(0)
-  const [exercises, setExercises] = useState<WordExercise[]>([])
-
-  useEffect(() => {
-    // Shuffle the exercises
-    setExercises([...wordExercises].sort(() => Math.random() - 0.5))
-  }, [])
-
-  const currentExercise = exercises[currentExerciseIndex]
-
-  const checkAnswer = (selectedIndex: number) => {
-    if (!currentExercise) return
-
-    const correct = selectedIndex === currentExercise.correctIndex
-    setIsCorrect(correct)
-
-    if (correct) {
-      setScore(score + 1)
-    }
-
-    setExerciseCount(exerciseCount + 1)
-
-    // Show result for a moment before moving to next exercise
-    setTimeout(() => {
-      setIsCorrect(null)
-      if (currentExerciseIndex < exercises.length - 1) {
-        setCurrentExerciseIndex(currentExerciseIndex + 1)
-      } else {
-        // Restart with shuffled exercises
-        setExercises([...wordExercises].sort(() => Math.random() - 0.5))
-        setCurrentExerciseIndex(0)
-      }
-    }, 1500)
-  }
-
-  if (!currentExercise) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 flex justify-center items-center">
-        <div className="text-3xl font-bold text-purple-800">🔄 Ładowanie magii... ✨</div>
-      </div>
-    )
-  }
+export default function ChildSelectionPage() {
+  const [hoveredCard, setHoveredCard] = useState<string | null>(null)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200">
@@ -129,14 +17,18 @@ export default function ReadingPage() {
         <div className="absolute top-32 right-20 w-6 h-6 bg-pink-400 rounded-full animate-pulse"></div>
         <div className="absolute top-60 left-1/4 w-4 h-4 bg-green-400 rounded-full animate-bounce delay-300"></div>
         <div className="absolute bottom-40 right-10 w-10 h-10 bg-orange-400 rounded-full animate-pulse delay-500"></div>
+        <div className="absolute top-1/3 right-1/4 w-6 h-6 bg-red-400 rounded-full animate-bounce delay-700"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-5 h-5 bg-indigo-400 rounded-full animate-pulse delay-1000"></div>
         <Star className="absolute top-40 right-1/3 w-6 h-6 text-yellow-500 animate-spin" />
         <Heart className="absolute bottom-60 left-20 w-8 h-8 text-red-400 animate-pulse" />
         <BookOpen className="absolute top-1/2 left-10 w-6 h-6 text-blue-500 animate-bounce" />
+        <Sparkles className="absolute top-1/4 left-1/2 w-7 h-7 text-purple-500 animate-pulse delay-200" />
+        <Palette className="absolute bottom-1/4 right-1/4 w-6 h-6 text-green-500 animate-bounce delay-400" />
       </div>
 
-      <div className="container flex flex-col items-center justify-center min-h-screen py-8 space-y-6 relative z-10">
+      <div className="container flex flex-col items-center justify-center min-h-screen py-8 space-y-8 relative z-10">
         {/* Header */}
-        <div className="flex items-center justify-between w-full max-w-md">
+        <div className="flex items-center justify-between w-full max-w-2xl">
           <Link href="/">
             <Button
               variant="outline"
@@ -146,110 +38,128 @@ export default function ReadingPage() {
               <Home className="w-4 h-4" />
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-lg">
-            📚 Czytanie ✨
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-lg text-center">
+            🌟 Wybierz swoją przygodę! ✨
           </h1>
           <div className="w-10"></div> {/* Spacer for alignment */}
         </div>
 
         {/* Fun decorative banner */}
-        <div className="flex justify-center space-x-4 text-3xl mb-4">
-          <span className="animate-bounce">📖</span>
-          <span className="animate-bounce delay-100">🌟</span>
-          <span className="animate-bounce delay-200">🎯</span>
-          <span className="animate-bounce delay-300">🎨</span>
+        <div className="flex justify-center space-x-6 text-4xl mb-6">
+          <span className="animate-bounce">🎪</span>
+          <span className="animate-bounce delay-100">🎨</span>
+          <span className="animate-bounce delay-200">🌈</span>
+          <span className="animate-bounce delay-300">🎯</span>
+          <span className="animate-bounce delay-400">🚀</span>
         </div>
 
-        {/* Main game card */}
-        <Card className="w-full max-w-md bg-gradient-to-br from-blue-200 to-purple-300 border-4 border-blue-300 shadow-2xl hover:shadow-3xl transition-all duration-300 rounded-3xl">
-          <CardContent className="pt-6">
-            <div className="flex flex-col items-center space-y-6">
-              {/* Score section */}
-              <div className="flex items-center justify-between w-full bg-white/80 rounded-2xl p-4 shadow-lg backdrop-blur-sm">
-                <div className="text-lg font-bold text-purple-700">🏆 Punkty: {score}</div>
-                <div className="text-lg font-bold text-blue-700">🎯 Zadanie: {exerciseCount + 1}</div>
-              </div>
+        {/* Selection Cards */}
+        <div className="grid md:grid-cols-2 gap-8 w-full max-w-4xl">
+          {/* Preschool Option */}
+          <Link href="/read/preschooler">
+            <Card
+              className="h-full bg-gradient-to-br from-green-200 to-blue-300 border-4 border-green-300 shadow-2xl hover:shadow-3xl transition-all duration-300 rounded-3xl cursor-pointer transform hover:scale-105"
+              onMouseEnter={() => setHoveredCard("preschool")}
+              onMouseLeave={() => setHoveredCard(null)}
+            >
+              <CardContent className="pt-8 pb-6">
+                <div className="flex flex-col items-center space-y-6">
+                  {/* Icon container */}
+                  <div className="relative">
+                    <div className="absolute -inset-3 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 rounded-full blur opacity-75 animate-pulse"></div>
+                    <div className="relative w-32 h-32 bg-gradient-to-br from-green-300 to-blue-400 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                      <Baby className="w-16 h-16 text-white drop-shadow-lg" />
+                    </div>
+                  </div>
 
-              {/* Progress bar */}
-              <div className="w-full bg-white/50 rounded-full p-2 shadow-inner">
-                <Progress
-                  value={(score / (exerciseCount || 1)) * 100}
-                  className="w-full h-4 bg-gradient-to-r from-green-400 to-blue-400"
-                />
-              </div>
+                  {/* Title */}
+                  <h2 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent text-center">
+                    🍼 Przedszkolak 🎈
+                  </h2>
 
-              <div className="flex flex-col items-center space-y-6 w-full">
-                {/* Image container */}
-                <div className="relative">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 rounded-3xl blur opacity-75"></div>
-                  <img
-                    src={currentExercise.image || "/placeholder.svg"}
-                    alt={currentExercise.word}
-                    className="relative w-48 h-48 object-cover rounded-2xl shadow-xl border-4 border-white"
-                  />
+                  {/* Description */}
+                  <div className="bg-white/80 rounded-2xl p-4 shadow-lg backdrop-blur-sm">
+                    <p className="text-green-800 font-bold text-lg text-center">🌟 Zabawy dla najmłodszych! 🎨</p>
+                    <p className="text-green-700 text-center mt-2">Kolory, kształty i pierwsze słówka! ✨</p>
+                  </div>
+
+                  {/* Fun elements */}
+                  <div className="flex justify-center space-x-4 text-2xl">
+                    <span className={hoveredCard === "preschool" ? "animate-bounce" : ""}>🧸</span>
+                    <span className={hoveredCard === "preschool" ? "animate-bounce delay-100" : ""}>🎪</span>
+                    <span className={hoveredCard === "preschool" ? "animate-bounce delay-200" : ""}>🌈</span>
+                    <span className={hoveredCard === "preschool" ? "animate-bounce delay-300" : ""}>🎨</span>
+                  </div>
                 </div>
+              </CardContent>
+              <CardFooter className="flex justify-center pb-6">
+                <Button className="bg-gradient-to-r from-green-400 to-blue-400 hover:from-green-500 hover:to-blue-500 border-none text-white rounded-2xl px-8 py-4 font-bold text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                  🚀 Zaczynamy zabawę! 🎉
+                </Button>
+              </CardFooter>
+            </Card>
+          </Link>
 
-                {/* Answer section */}
-                {isCorrect === null ? (
-                  <div className="grid grid-cols-2 gap-4 w-full">
-                    {currentExercise.options.map((option, index) => (
-                      <Button
-                        key={index}
-                        onClick={() => checkAnswer(index)}
-                        className="bg-gradient-to-r from-green-400 to-blue-400 hover:from-green-500 hover:to-blue-500 border-none text-white rounded-2xl px-6 py-8 h-auto font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
-                      >
-                        {option}
-                      </Button>
-                    ))}
+          {/* School Age Option */}
+          <Link href="/read/child">
+            <Card
+              className="h-full bg-gradient-to-br from-purple-200 to-pink-300 border-4 border-purple-300 shadow-2xl hover:shadow-3xl transition-all duration-300 rounded-3xl cursor-pointer transform hover:scale-105"
+              onMouseEnter={() => setHoveredCard("school")}
+              onMouseLeave={() => setHoveredCard(null)}
+            >
+              <CardContent className="pt-8 pb-6">
+                <div className="flex flex-col items-center space-y-6">
+                  {/* Icon container */}
+                  <div className="relative">
+                    <div className="absolute -inset-3 bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 rounded-full blur opacity-75 animate-pulse"></div>
+                    <div className="relative w-32 h-32 bg-gradient-to-br from-purple-300 to-pink-400 rounded-full flex items-center justify-center shadow-xl border-4 border-white">
+                      <GraduationCap className="w-16 h-16 text-white drop-shadow-lg" />
+                    </div>
                   </div>
-                ) : (
-                  <div
-                    className={cn(
-                      "flex flex-col items-center justify-center w-32 h-32 rounded-full shadow-2xl border-4 border-white",
-                      isCorrect
-                        ? "bg-gradient-to-br from-green-300 to-green-500"
-                        : "bg-gradient-to-br from-red-300 to-red-500",
-                    )}
-                  >
-                    {isCorrect ? (
-                      <>
-                        <Check className="w-12 h-12 text-white drop-shadow-lg" />
-                        <div className="text-white font-bold mt-2">🎉</div>
-                      </>
-                    ) : (
-                      <div className="flex flex-col items-center">
-                        <X className="w-12 h-12 text-white drop-shadow-lg" />
-                        <div className="mt-2 text-lg font-bold text-white text-center">
-                          {currentExercise.options[currentExercise.correctIndex]}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </div>
-          </CardContent>
 
-          <CardFooter className="flex justify-center pb-6">
-            <div className="bg-white/80 rounded-2xl p-4 shadow-lg backdrop-blur-sm">
-              <div className="text-lg font-bold text-center">
-                {isCorrect === true && "🌟 Świetnie! Dobra odpowiedź! 🎉"}
-                {isCorrect === false && "💪 Spróbuj jeszcze raz! 🎯"}
-                {isCorrect === null && "🤔 Wybierz właściwe słowo! 📝"}
-              </div>
-            </div>
-          </CardFooter>
-        </Card>
+                  {/* Title */}
+                  <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
+                    🎓 Uczeń 📚
+                  </h2>
+
+                  {/* Description */}
+                  <div className="bg-white/80 rounded-2xl p-4 shadow-lg backdrop-blur-sm">
+                    <p className="text-purple-800 font-bold text-lg text-center">🧠 Wyzwania dla starszych! 🎯</p>
+                    <p className="text-purple-700 text-center mt-2">Czytanie, matematyka i logika! 🔬</p>
+                  </div>
+
+                  {/* Fun elements */}
+                  <div className="flex justify-center space-x-4 text-2xl">
+                    <span className={hoveredCard === "school" ? "animate-bounce" : ""}>📖</span>
+                    <span className={hoveredCard === "school" ? "animate-bounce delay-100" : ""}>🔢</span>
+                    <span className={hoveredCard === "school" ? "animate-bounce delay-200" : ""}>🧪</span>
+                    <span className={hoveredCard === "school" ? "animate-bounce delay-300" : ""}>🏆</span>
+                  </div>
+                </div>
+              </CardContent>
+              <CardFooter className="flex justify-center pb-6">
+                <Button className="bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 border-none text-white rounded-2xl px-8 py-4 font-bold text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                  🎯 Podejmij wyzwanie! 💪
+                </Button>
+              </CardFooter>
+            </Card>
+          </Link>
+        </div>
 
         {/* Motivational section */}
-        <div className="bg-gradient-to-r from-green-300 to-blue-300 rounded-3xl p-6 shadow-xl border-4 border-green-400 max-w-md">
+        <div className="bg-gradient-to-r from-yellow-300 to-orange-300 rounded-3xl p-6 shadow-xl border-4 border-yellow-400 max-w-2xl">
           <div className="text-center">
-            <div className="flex justify-center space-x-2 text-2xl mb-2">
-              <span className="animate-bounce">🎪</span>
-              <span className="animate-bounce delay-100">🎨</span>
-              <span className="animate-bounce delay-200">🌟</span>
+            <div className="flex justify-center space-x-2 text-3xl mb-3">
+              <span className="animate-bounce">🌟</span>
+              <span className="animate-bounce delay-100">🎪</span>
+              <span className="animate-bounce delay-200">🎨</span>
+              <span className="animate-bounce delay-300">🚀</span>
+              <span className="animate-bounce delay-400">🌈</span>
             </div>
-            <p className="text-green-800 font-bold text-lg">📚 Czytanie to przygoda! Każde słowo to nowa magia! ✨</p>
+            <p className="text-orange-800 font-bold text-xl">🎉 Każda przygoda zaczyna się od pierwszego kroku! ✨</p>
+            <p className="text-orange-700 text-lg mt-2">
+              Wybierz swoją ścieżkę i odkrywaj świat nauki przez zabawę! 🌍
+            </p>
           </div>
         </div>
       </div>
