@@ -26,9 +26,9 @@ export default function ChildSelectionPage() {
         <Palette className="absolute bottom-1/4 right-1/4 w-6 h-6 text-green-500 animate-bounce delay-400" />
       </div>
 
-      <div className="container flex flex-col items-center justify-center min-h-screen py-8 space-y-8 relative z-10">
+      <div className="flex flex-col items-center justify-center min-h-screen py-8 space-y-8 relative z-10">
         {/* Header */}
-        <div className="flex items-center justify-between w-full max-w-2xl">
+        <div className="flex items-center justify-between w-full">
           <Link href="/">
             <Button
               variant="outline"
@@ -38,7 +38,7 @@ export default function ChildSelectionPage() {
               <Home className="w-4 h-4" />
             </Button>
           </Link>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent drop-shadow-lg text-center">
+          <h1 className="text-5xl font-bold text-purple-400 text-center">
             🌟 Wybierz swoją przygodę! ✨
           </h1>
           <div className="w-10"></div> {/* Spacer for alignment */}
@@ -73,7 +73,7 @@ export default function ChildSelectionPage() {
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent text-center">
+                  <h2 className="text-3xl font-bold text-center text-green-800">
                     🍼 Przedszkolak 🎈
                   </h2>
 
@@ -118,7 +118,7 @@ export default function ChildSelectionPage() {
                   </div>
 
                   {/* Title */}
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent text-center">
+                  <h2 className="text-3xl font-bold text-center text-purple-800">
                     🎓 Uczeń 📚
                   </h2>
 
