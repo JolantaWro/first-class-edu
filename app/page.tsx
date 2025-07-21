@@ -16,7 +16,7 @@ export default function HomePage() {
       </div>
 
       {/* Hero section with rainbow gradient */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-pink-300 via-purple-300 via-blue-300 to-green-300 pt-16 pb-24">
+      <div className="relative overflow-hidden bg-gradient-to-r from-pink-300 via-purple-300 to-green-300 pt-16 pb-24">
         <div className="container mx-auto px-6 text-center relative z-10">
           <div className="inline-block mb-6">
             <h1 className="text-6xl font-bold tracking-tight mb-4 drop-shadow-lg text-purple-800">
