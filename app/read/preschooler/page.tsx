@@ -23,6 +23,12 @@ const wordExercises: WordExercise[] = [
     image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/kot_rxflxu.jpg",
   },
   {
+    word: "k",
+    options: ["k", "p", "o", "t"],
+    correctIndex: 0,
+    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753468424/books-8594725_640_m9sc96.jpg",
+  },
+  {
     word: "d",
     options: ["r", "d", "s", "p"],
     correctIndex: 1,
