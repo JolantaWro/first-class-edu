@@ -16,69 +16,34 @@ type WordExercise = {
 }
 
 const wordExercises: WordExercise[] = [
-  {
-    word: "k",
-    options: ["k", "p", "o", "t"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/kot_rxflxu.jpg",
-  },
-  {
-    word: "k",
-    options: ["k", "p", "o", "t"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753468424/books-8594725_640_m9sc96.jpg",
-  },
-  {
-    word: "d",
-    options: ["r", "d", "s", "p"],
-    correctIndex: 1,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/home_egan7x.jpg",
-  },
-  {
-    word: "s",
-    options: ["p", "d", "s", "c"],
-    correctIndex: 2,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/sun_furv0v.jpg",
-  },
-  {
-    word: "j",
-    options: ["j", "g", "b", "k"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg",
-  },
-  {
-    word: "p",
-    options: ["a", "k", "p", "l"],
-    correctIndex: 2,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749675890/pexels-oandremoura-2471259_cmw63g.jpg",
-  },
-  {
-    word: "k",
-    options: ["d", "k", "t", "r"],
-    correctIndex: 1,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749933850/flower_imayfk.jpg",
-  },
-  {
-    word: "s",
-    options: ["s", "r", "z", "p"],
-    correctIndex: 0,
-    image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1750075914/pexels-alexgtacar-745150-1592384_aubtof.jpg",
-  },
-  {
-    word: "m",
-    options: ["n", "b", "r", "m"],
-    correctIndex: 3,
-    image:
-      "https://res.cloudinary.com/dadi3oed4/image/upload/v1750624028/pexels-polina-tankilevitch-3875205_rmutr1.jpg",
-  },
-  {
-    word: "t",
-    options: ["r", "t", "k", "i"],
-    correctIndex: 1,
-    image:
-      "https://res.cloudinary.com/dadi3oed4/image/upload/v1751975557/strawberries_hz2xvp.jpg",
-  },
+  { word: "a", options: ["a", "o", "e", "u"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg" },
+  { word: "b", options: ["d", "p", "b", "h"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/butterfly_kids_pict.jpg" },
+  { word: "c", options: ["c", "s", "o", "a"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/cat_letter_c.jpg" },
+  { word: "d", options: ["r", "d", "s", "p"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/home_egan7x.jpg" },
+  { word: "e", options: ["a", "e", "i", "o"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/elephant_letter_e.jpg" },
+  { word: "f", options: ["g", "f", "t", "b"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/fish_letter_f.jpg" },
+  { word: "g", options: ["g", "q", "p", "b"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/giraffe_letter_g.jpg" },
+  { word: "h", options: ["m", "n", "h", "t"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/hat_letter_h.jpg" },
+  { word: "i", options: ["i", "l", "j", "e"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/icecream_letter_i.jpg" },
+  { word: "j", options: ["j", "g", "b", "k"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg" },
+  { word: "k", options: ["k", "p", "o", "t"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/kot_rxflxu.jpg" },
+  { word: "l", options: ["l", "i", "t", "e"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/lion_letter_l.jpg" },
+  { word: "m", options: ["n", "b", "r", "m"], correctIndex: 3, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1750624028/pexels-polina-tankilevitch-3875205_rmutr1.jpg" },
+  { word: "n", options: ["n", "m", "u", "v"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/nest_letter_n.jpg" },
+  { word: "o", options: ["u", "o", "a", "e"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/orange_letter_o.jpg" },
+  { word: "p", options: ["a", "k", "p", "l"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749675890/pexels-oandremoura-2471259_cmw63g.jpg" },
+  { word: "q", options: ["g", "o", "q", "p"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/queen_letter_q.jpg" },
+  { word: "r", options: ["d", "p", "r", "f"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/rabbit_letter_r.jpg" },
+  { word: "s", options: ["p", "d", "s", "c"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/sun_furv0v.jpg" },
+  { word: "t", options: ["r", "t", "k", "i"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1751975557/strawberries_hz2xvp.jpg" },
+  { word: "u", options: ["o", "u", "a", "e"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/umbrella_letter_u.jpg" },
+  { word: "v", options: ["w", "v", "u", "y"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/violin_letter_v.jpg" },
+  { word: "w", options: ["m", "n", "w", "v"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/whale_letter_w.jpg" },
+  { word: "x", options: ["x", "k", "z", "t"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/xylophone_letter_x.jpg" },
+  { word: "y", options: ["i", "u", "y", "e"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/yarn_letter_y.jpg" },
+  { word: "z", options: ["z", "s", "x", "t"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/zebra_letter_z.jpg" },
 ]
+
 
 export default function ReadingPage() {
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0)
