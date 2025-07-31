@@ -16,7 +16,7 @@ type WordExercise = {
 }
 
 const wordExercises: WordExercise[] = [
-  { word: "a", options: ["a", "o", "e", "u"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg" },
+  { word: "a", options: ["a", "o", "e", "u"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753906050/pexels-pixabay-51383_sgoefm.jpg" },
   { word: "b", options: ["d", "p", "b", "h"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486543/butterfly_kids_pict.jpg" },
   { word: "c", options: ["c", "s", "o", "a"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/cat_letter_c.jpg" },
   { word: "d", options: ["r", "d", "s", "p"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/home_egan7x.jpg" },
