@@ -21,7 +21,7 @@ const wordExercises: WordExercise[] = [
   { word: "c", options: ["c", "s", "o", "a"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1754253691/pexels-pixabay-533342_cdhc5l.jpg" },
   { word: "d", options: ["r", "d", "s", "p"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320084/home_egan7x.jpg" },
   { word: "e", options: ["a", "e", "i", "o"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1754417850/elf_nvrygs.png" },
-  { word: "f", options: ["g", "f", "t", "b"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/fish_letter_f.jpg" },
+  { word: "f", options: ["g", "f", "t", "b"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1754833902/fortepian_ajldn2.jpg" },
   { word: "g", options: ["g", "q", "p", "b"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/giraffe_letter_g.jpg" },
   { word: "h", options: ["m", "n", "h", "t"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/hat_letter_h.jpg" },
   { word: "i", options: ["i", "l", "j", "e"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753486544/icecream_letter_i.jpg" },
