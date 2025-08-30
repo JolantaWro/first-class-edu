@@ -28,7 +28,7 @@ const wordExercises: WordExercise[] = [
   { word: "j", options: ["j", "g", "b", "k"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/apple_up1dos.jpg" },
   { word: "k", options: ["k", "p", "o", "t"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1749320083/kot_rxflxu.jpg" },
   { word: "l", options: ["l", "i", "t", "e"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1756150955/doll_s0yj3q.jpg" },
-  { word: "m", options: ["n", "b", "r", "m"], correctIndex: 3, image: "" },
+  { word: "m", options: ["n", "b", "r", "m"], correctIndex: 3, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1756413296/mrowka_eyf76i.jpg" },
   { word: "n", options: ["n", "m", "u", "v"], correctIndex: 0, image: "" },
   { word: "o", options: ["u", "o", "a", "e"], correctIndex: 1, image: "" },
   { word: "p", options: ["a", "k", "p", "l"], correctIndex: 2, image: "" },
