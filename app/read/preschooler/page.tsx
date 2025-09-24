@@ -36,7 +36,7 @@ const wordExercises: WordExercise[] = [
   { word: "r", options: ["d", "p", "r", "f"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1757323522/rower_c6dbog.jpg" },
   { word: "s", options: ["p", "d", "s", "c"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1757709984/sok_ur61ow.jpg" },
   { word: "t", options: ["r", "t", "k", "i"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1758223287/phone_pqlybk.jpg" },
-  { word: "u", options: ["o", "u", "a", "e"], correctIndex: 1, image: "" },
+  { word: "u", options: ["o", "u", "a", "e"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1758537253/ule_ri4qat.jpg" },
   { word: "v", options: ["w", "v", "u", "y"], correctIndex: 1, image: "" },
   { word: "w", options: ["m", "n", "w", "v"], correctIndex: 2, image: "" },
   { word: "x", options: ["x", "k", "z", "t"], correctIndex: 0, image: "" },
