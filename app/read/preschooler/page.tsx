@@ -40,7 +40,7 @@ const wordExercises: WordExercise[] = [
   { word: "v", options: ["w", "v", "u", "y"], correctIndex: 1, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1758825448/volvo_tkbybf.jpg" },
   { word: "w", options: ["m", "n", "w", "v"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1759005498/wiatrak_oezoyo.jpg" },
   { word: "x", options: ["x", "k", "z", "t"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1759689103/xylofon_uewrc0.png" },
-  { word: "y", options: ["i", "u", "y", "e"], correctIndex: 2, image: "" },
+  { word: "y", options: ["i", "u", "y", "e"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1759821545/yeti_zzcs08.png" },
   { word: "z", options: ["z", "s", "x", "t"], correctIndex: 0, image: "" },
 ]
 
