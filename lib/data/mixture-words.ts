@@ -1,5 +1,5 @@
 
-interface WordExercise {
+interface MixtureWord {
   word: string;
   options: string[];
   correctIndex: number;

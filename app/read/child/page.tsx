@@ -7,13 +7,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Home, Check, X, Star, Heart, BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
-
-type WordExercise = {
-  word: string
-  options: string[]
-  correctIndex: number
-  image: string
-}
+import { wordExercises, WordExercise } from "@/lib/data/combined-words"
 
 
 
