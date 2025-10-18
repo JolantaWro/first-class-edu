@@ -1,11 +1,6 @@
-interface WordExercise {
-  word: string;
-  options: string[];
-  correctIndex: number;
-  image: string;
-}
+import { LetterType } from "../../types/reading";
 
-export const wordExercises: WordExercise[] = [
+export const wordExercises: LetterType[] = [
   { word: "a", options: ["a", "o", "e", "u"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1753906050/pexels-pixabay-51383_sgoefm.jpg" },
   { word: "b", options: ["d", "p", "b", "h"], correctIndex: 2, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1754068359/pexels-padli-772478_wmnvfs.jpg" },
   { word: "c", options: ["c", "s", "o", "a"], correctIndex: 0, image: "https://res.cloudinary.com/dadi3oed4/image/upload/v1754253691/pexels-pixabay-533342_cdhc5l.jpg" },
