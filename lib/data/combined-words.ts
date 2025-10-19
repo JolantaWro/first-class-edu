@@ -2,16 +2,13 @@
 
 import { wordExercises as alphabetExercises } from './alphabet-letter';
 import { wordExercises as mixtureExercises } from './mixture-words';
+import { LetterType } from '../../types/reading';
 
-export interface WordExercise {
-  word: string;
-  options: string[];
-  correctIndex: number;
-  image: string;
-}
+// Re-export the LetterType
+export type { LetterType };
 
 // Combine both exercise sets
-export const wordExercises: WordExercise[] = [
+export const wordExercises: LetterType[] = [
   ...alphabetExercises,
   ...mixtureExercises
 ];
