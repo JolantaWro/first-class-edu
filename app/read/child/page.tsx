@@ -7,7 +7,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Home, Check, X, Star, Heart, BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { LetterType, wordExercises } from "@/lib/data/combined-words"
+import { wordExercises, MixtureWord } from "@/lib/data/mixture-words"
 
 
 
@@ -16,10 +16,9 @@ export default function ReadingPage() {
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null)
   const [score, setScore] = useState(0)
   const [exerciseCount, setExerciseCount] = useState(0)
-  const [exercises, setExercises] = useState<LetterType[]>([])
+  const [exercises, setExercises] = useState<MixtureWord[]>([])
 
   useEffect(() => {
-    // Shuffle the exercises
     setExercises([...wordExercises].sort(() => Math.random() - 0.5))
   }, [])
 

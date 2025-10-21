@@ -1,5 +1,5 @@
 
-interface MixtureWord {
+export interface MixtureWord {
   word: string;
   options: string[];
   correctIndex: number;
