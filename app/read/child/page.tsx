@@ -19,7 +19,6 @@ export default function ReadingPage() {
   const [exercises, setExercises] = useState<MixtureWord[]>([])
 
   useEffect(() => {
-    // Shuffle the exercises
     setExercises([...wordExercises].sort(() => Math.random() - 0.5))
   }, [])
 
