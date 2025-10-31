@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
-import { Home, Check, X, Plus, Minus } from "lucide-react"
+import { Home, Check, X, Plus, Minus, BookOpen } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 type MathExercise = {
@@ -110,15 +110,17 @@ export default function BasicMathPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-200 via-orange-200 to-amber-200">
+    <div className="min-h-screen bg-gradient-to-br from-rose-300 via-amber-300 to-cyan-300">
       {/* Floating decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-8 h-8 bg-amber-400 rounded-full animate-bounce"></div>
-        <div className="absolute top-32 right-20 w-6 h-6 bg-orange-400 rounded-full animate-pulse"></div>
-        <div className="absolute top-60 left-1/4 w-4 h-4 bg-yellow-400 rounded-full animate-bounce delay-300"></div>
-        <div className="absolute bottom-40 right-10 w-10 h-10 bg-red-300 rounded-full animate-pulse delay-500"></div>
-        <Plus className="absolute top-40 right-1/3 w-6 h-6 text-amber-500 animate-spin" />
-        <Minus className="absolute bottom-60 left-20 w-8 h-8 text-orange-500 animate-pulse" />
+        <div className="absolute top-16 left-6 w-10 h-10 bg-rose-500 rounded-full animate-bounce opacity-70 shadow-md"></div>
+        <div className="absolute top-28 right-16 w-8 h-8 bg-amber-500 rounded-full animate-pulse opacity-65 shadow-sm"></div>
+        <div className="absolute top-56 left-1/3 w-5 h-5 bg-lime-500 rounded-full animate-bounce delay-200 opacity-65 shadow-sm"></div>
+        <div className="absolute bottom-36 right-12 w-12 h-12 bg-cyan-500 rounded-full animate-pulse delay-400 opacity-65 shadow-sm"></div>
+        <Plus className="absolute top-40 right-1/3 w-7 h-7 text-rose-200 opacity-80 animate-spin" />
+        <Minus className="absolute bottom-60 left-20 w-9 h-9 text-lime-200 opacity-80 animate-pulse" />
+        <BookOpen className="absolute top-1/2 left-10 w-7 h-7 text-cyan-200 opacity-80 animate-bounce" />
+        <X className="absolute top-24 left-1/2 w-6 h-6 text-violet-300 opacity-75 animate-pulse" />
       </div>
 
       <div className="container flex flex-col items-center justify-center min-h-screen py-8 space-y-6 relative z-10">
@@ -128,12 +130,12 @@ export default function BasicMathPage() {
             <Button
               variant="outline"
               size="icon"
-              className="bg-gradient-to-r from-amber-400 to-orange-400 border-none text-white hover:from-amber-500 hover:to-orange-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+              className="bg-gradient-to-r from-rose-600 to-cyan-600 border-none text-white hover:from-rose-700 hover:to-cyan-700 shadow-sm transform transition-all duration-200"
             >
               <Home className="w-4 h-4" />
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-amber-600 via-orange-600 to-red-500 bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-rose-900 via-lime-900 to-cyan-900 bg-clip-text text-transparent drop-shadow-md">
             🧮 Dodawanie i Odejmowanie ✨
           </h1>
           <div className="w-10"></div> {/* Spacer for alignment */}
