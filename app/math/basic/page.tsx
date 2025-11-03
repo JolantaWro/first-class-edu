@@ -173,10 +173,10 @@ export default function BasicMathPage() {
                   <div className="absolute -inset-2 bg-gradient-to-r from-amber-400 via-orange-400 to-red-300 rounded-3xl blur opacity-75"></div>
                   <div className="relative bg-white p-8 rounded-2xl shadow-xl border-4 border-white flex items-center justify-center">
                     <span className="text-4xl font-bold text-amber-800">{currentExercise.question}</span>
-                    {currentExercise.operation === '+' ? 
+                    {/* {currentExercise.operation === '+' ?
                       <Plus className="ml-2 w-8 h-8 text-amber-500" /> : 
                       <Minus className="ml-2 w-8 h-8 text-orange-500" />
-                    }
+                    } */}
                   </div>
                 </div>
 
