@@ -7,7 +7,7 @@ import { Plus, Minus, X, Divide, BookOpen } from "lucide-react"
 
 export default function MathPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-200 via-amber-200 to-cyan-200">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-rose-200 via-amber-200 to-cyan-200">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-16 left-6 w-10 h-10 bg-rose-400 rounded-full animate-bounce opacity-90 shadow-lg"></div>
@@ -19,7 +19,7 @@ export default function MathPage() {
         <BookOpen className="absolute top-1/2 left-10 w-7 h-7 text-cyan-500 animate-bounce" />
       </div>
 
-      <div className="container flex flex-col items-center justify-center min-h-screen py-8 space-y-10 relative z-10">
+      <div className="container mx-auto max-w-4xl flex flex-col items-center justify-center py-8 space-y-10 relative z-10">
         {/* Header */}
         <div className="text-center">
           <h1 className="text-5xl font-extrabold bg-gradient-to-r from-rose-600 via-amber-500 to-cyan-600 bg-clip-text text-transparent drop-shadow-lg mb-4">
