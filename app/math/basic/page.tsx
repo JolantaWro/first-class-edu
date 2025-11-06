@@ -110,7 +110,7 @@ export default function BasicMathPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-300 via-amber-300 to-cyan-300">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-rose-300 via-amber-300 to-cyan-300">
       {/* Floating decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-16 left-6 w-10 h-10 bg-rose-500 rounded-full animate-bounce opacity-70 shadow-md"></div>
@@ -123,7 +123,7 @@ export default function BasicMathPage() {
         <X className="absolute top-24 left-1/2 w-6 h-6 text-violet-300 opacity-75 animate-pulse" />
       </div>
 
-      <div className="container flex flex-col items-center justify-center min-h-screen py-8 space-y-6 relative z-10">
+      <div className="container mx-auto max-w-4xl flex flex-col items-center justify-center py-8 space-y-6 relative z-10">
         {/* Header */}
         <div className="flex items-center justify-between w-full max-w-md">
           <Link href="/math">
