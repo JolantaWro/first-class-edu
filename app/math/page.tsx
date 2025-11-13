@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Plus, Minus, X, Divide, BookOpen } from "lucide-react"
+import { Plus, Minus, X, Divide, BookOpen, Home } from "lucide-react"
 
 export default function MathPage() {
   return (
@@ -101,13 +101,14 @@ export default function MathPage() {
           </div>
         </div>
 
-        {/* Home button */}
+        {/* Home button (icon like in read section) */}
         <Link href="/">
           <Button
             variant="outline"
-            className="bg-gradient-to-r from-fuchsia-400 to-amber-400 border-none text-white hover:from-fuchsia-500 hover:to-amber-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+            size="icon"
+            className="bg-gradient-to-r from-purple-400 to-pink-400 border-none text-white hover:from-purple-500 hover:to-pink-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
-            Wróć do strony głównej
+            <Home className="w-4 h-4" />
           </Button>
         </Link>
       </div>
