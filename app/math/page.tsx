@@ -20,11 +20,24 @@ export default function MathPage() {
       </div>
 
       <div className="container mx-auto max-w-4xl flex flex-col items-center justify-center py-8 space-y-10 relative z-10">
-        {/* Header */}
+        {/* Header with inline Home button */}
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold bg-gradient-to-r from-rose-600 via-amber-500 to-cyan-600 bg-clip-text text-transparent drop-shadow-lg mb-4">
-            🧮 Matematyka 🔢
-          </h1>
+          <div className="flex items-center justify-center space-x-4">
+            <Link href="/">
+              <Button
+                variant="outline"
+                size="icon"
+                className="bg-gradient-to-r from-purple-400 to-pink-400 border-none text-white hover:from-purple-500 hover:to-pink-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+              >
+                <Home className="w-6 h-6" />
+              </Button>
+            </Link>
+
+            <h1 className="text-5xl font-extrabold bg-gradient-to-r from-rose-600 via-amber-500 to-cyan-600 bg-clip-text text-transparent drop-shadow-lg mb-4">
+              🧮 Matematyka 🔢
+            </h1>
+          </div>
+
           <p className="text-lg text-cyan-800 max-w-lg mx-auto">
             Wybierz sekcję i baw się liczbami — kolorowo i przyjemnie!
           </p>
@@ -100,17 +113,6 @@ export default function MathPage() {
             <p className="text-cyan-800 font-bold text-lg">📐 Matematyka to zabawa! Kolory pomagają zapamiętywać i bawić się nauką 🎲</p>
           </div>
         </div>
-
-        {/* Home button (icon like in read section) */}
-        <Link href="/">
-          <Button
-            variant="outline"
-            size="icon"
-            className="bg-gradient-to-r from-purple-400 to-pink-400 border-none text-white hover:from-purple-500 hover:to-pink-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
-          >
-            <Home className="w-4 h-4" />
-          </Button>
-        </Link>
       </div>
     </div>
   )
