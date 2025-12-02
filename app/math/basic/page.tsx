@@ -130,7 +130,7 @@ export default function BasicMathPage() {
             <Button
               variant="outline"
               size="icon"
-              className="bg-gradient-to-r from-rose-600 to-cyan-600 border-none text-white hover:from-rose-700 hover:to-cyan-700 shadow-sm transform transition-all duration-200"
+              className="mr-6 bg-gradient-to-r from-rose-600 to-cyan-600 border-none text-white hover:from-rose-700 hover:to-cyan-700 shadow-sm transform transition-all duration-200"
             >
               <Home className="w-4 h-4" />
             </Button>
