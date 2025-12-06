@@ -29,7 +29,7 @@ export default function MathPage() {
                 size="icon"
                 className="bg-gradient-to-r from-purple-400 to-pink-400 border-none text-white hover:from-purple-500 hover:to-pink-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
               >
-                <Home className="w-6 h-6" />
+                <Home className="w-12 h-12" />
               </Button>
             </Link>
 
