@@ -171,7 +171,7 @@ export default function ReadingPage() {
               <div className="text-lg font-bold text-center">
                 {isCorrect === true && "🌟 Świetnie! Dobra odpowiedź! 🎉"}
                 {isCorrect === false && "💪 Spróbuj jeszcze raz! 🎯"}
-                {isCorrect === null && "🤔 Wybierz właściwe słowo! 📝"}
+                {isCorrect === null && "🤔 Wybierz właściwą litere! 📝"}
               </div>
             </div>
           </CardFooter>
