@@ -28,20 +28,19 @@ export default function ChildSelectionPage() {
 
       <div className="flex flex-col items-center justify-center min-h-screen py-8 space-y-8 relative z-10">
         {/* Header */}
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full max-w-5xl">
           <Link href="/">
             <Button
               variant="outline"
-              size="icon"
-              className="bg-gradient-to-r from-purple-400 to-pink-400 border-none text-white hover:from-purple-500 hover:to-pink-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+              className="ml-8 bg-gradient-to-r from-purple-400 to-pink-400 border-none text-white hover:from-purple-500 hover:to-pink-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 w-14 h-14"
             >
-              <Home className="w-4 h-4" />
+              <Home className="w-6 h-6" />
             </Button>
           </Link>
           <h1 className="text-5xl font-bold text-purple-400 text-center">
             🌟 Wybierz swoją przygodę! ✨
           </h1>
-          <div className="w-10"></div> {/* Spacer for alignment */}
+          <div className="w-14"></div> {/* Spacer for alignment */}
         </div>
 
         {/* Fun decorative banner */}
