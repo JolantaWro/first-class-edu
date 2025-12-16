@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { BookOpen, Calculator, Star, Heart } from "lucide-react"
+import { BookOpen, Calculator, Star, Heart, Languages } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -39,7 +39,7 @@ export default function HomePage() {
 
       {/* Main content */}
       <div className="container mx-auto px-6 -mt-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Math card */}
           <Link href="/math" className="group">
             <div className="bg-gradient-to-br from-orange-200 to-yellow-300 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden h-full transform group-hover:-translate-y-2 group-hover:scale-105 border-4 border-orange-300">
@@ -85,6 +85,31 @@ export default function HomePage() {
 
                 <Button className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 border-none text-white rounded-full px-10 py-7 h-auto font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
                   ✨ Zacznij czytać!
+                </Button>
+              </div>
+            </div>
+          </Link>
+
+          {/* English card */}
+          <Link href="/english" className="group">
+            <div className="bg-gradient-to-br from-green-200 to-teal-300 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden h-full transform group-hover:-translate-y-2 group-hover:scale-105 border-4 border-green-300">
+              <div className="p-8 flex flex-col items-center relative">
+                {/* Decorative circles */}
+                <div className="absolute top-4 right-4 w-6 h-6 bg-yellow-400 rounded-full opacity-70"></div>
+                <div className="absolute top-8 right-8 w-4 h-4 bg-red-400 rounded-full opacity-70"></div>
+
+                <div className="w-28 h-28 rounded-full bg-gradient-to-br from-green-500 via-teal-500 to-cyan-500 flex items-center justify-center mb-6 shadow-lg border-4 border-white">
+                  <Languages className="w-14 h-14 text-white drop-shadow-lg" />
+                </div>
+
+                <h2 className="text-3xl font-bold text-green-800 mb-3 drop-shadow-sm">🇬🇧 Angielski</h2>
+
+                <p className="text-green-700 text-center mb-6 font-medium text-lg">
+                  Hello! Poznaj angielski przez zabawę! Kolory, zwierzęta i więcej! 🌍🎈
+                </p>
+
+                <Button className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 border-none text-white rounded-full px-10 py-7 h-auto font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
+                  🌟 Let's go!
                 </Button>
               </div>
             </div>
