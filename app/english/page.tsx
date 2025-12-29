@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Baby, UserCircle, Languages, Star, Heart } from "lucide-react"
+import { ArrowLeft, Baby, UserCircle, Globe, Star, Heart } from "lucide-react"
 
 export default function EnglishPage() {
   return (
@@ -27,7 +27,7 @@ export default function EnglishPage() {
 
           <div className="text-center relative z-10">
             <div className="inline-block mb-6">
-              <Languages className="w-20 h-20 text-green-700 mx-auto mb-4 drop-shadow-lg" />
+              <Globe className="w-20 h-20 text-green-700 mx-auto mb-4 drop-shadow-lg" />
               <h1 className="text-6xl font-bold tracking-tight mb-4 drop-shadow-lg text-green-800">
                 🇬🇧 Angielski 🌍
               </h1>
