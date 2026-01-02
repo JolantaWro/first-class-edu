@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Baby, UserCircle, Globe, Star, Heart } from "lucide-react"
+import { Home, Baby, UserCircle, Globe, Star, Heart } from "lucide-react"
 
 export default function EnglishPage() {
   return (
@@ -19,9 +19,8 @@ export default function EnglishPage() {
       <div className="relative overflow-hidden bg-gradient-to-r from-green-300 via-teal-300 to-cyan-300 pt-8 pb-16">
         <div className="container mx-auto px-6">
           <Link href="/">
-            <Button variant="ghost" className="mb-6 bg-white/80 hover:bg-white rounded-full px-6 py-3 shadow-lg">
-              <ArrowLeft className="mr-2 h-5 w-5" />
-              Powrót do strony głównej
+            <Button variant="ghost" size="icon" className="mb-6 bg-white/80 hover:bg-white rounded-full shadow-lg w-12 h-12">
+              <Home className="h-6 w-6" />
             </Button>
           </Link>
 
