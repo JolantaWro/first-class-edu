@@ -109,7 +109,7 @@ export default function HomePage() {
                 </p>
 
                 <Button className="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 border-none text-white rounded-full px-10 py-7 h-auto font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
-                  🌟 Let's go!
+                   🌟 Let&apos;s go!
                 </Button>
               </div>
             </div>

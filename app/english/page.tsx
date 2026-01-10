@@ -77,7 +77,7 @@ export default function EnglishPage() {
                 </div>
 
                 <Button className="bg-gradient-to-r from-yellow-500 to-green-500 hover:from-yellow-600 hover:to-green-600 border-none text-white rounded-full px-12 py-7 h-auto font-bold text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
-                  🌟 Let's start!
+                  🌟 Let&apos;s start!
                 </Button>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function EnglishPage() {
                 </div>
 
                 <Button className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 border-none text-white rounded-full px-12 py-7 h-auto font-bold text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">
-                  🚀 Let's go!
+                  🚀 Let&apos;s go!
                 </Button>
               </div>
             </div>
